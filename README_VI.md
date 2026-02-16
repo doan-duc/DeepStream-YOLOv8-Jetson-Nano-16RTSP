@@ -328,6 +328,13 @@ Dự án dựa trên các project mã nguồn mở:
 **Đoàn Sinh Đức**
 Sinh viên Đại học Bách khoa Hà Nội (HUST)
 
+## Lưu Ý & Liên Hệ
+
+Dự án có thể còn tồn tại sai sót và thiếu sót trong quá trình phát triển. Rất mong nhận được sự thông cảm và đóng góp ý kiến từ mọi người!
+
+Mọi thắc mắc hoặc trao đổi, vui lòng liên hệ qua email:
+📧 **Email:** doansinhduc@gmail.com
+
 ---
 
 ## Giấy Phép

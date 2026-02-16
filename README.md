@@ -434,4 +434,11 @@ This project is built upon the following open-source projects:
 **Đoàn Sinh Đức**
 Student at Hanoi University of Science and Technology (HUST)
 
+## Contact & Disclaimer
+
+This project is open-source and may contain bugs or incomplete features. Your feedback and contributions are welcome!
+
+If you encounter any issues or have questions, please feel free to reach out:
+📧 **Email:** doansinhduc@gmail.com
+
 ---
