@@ -1,0 +1,38 @@
+# ============================================================
+# DeepStream YOLOv8 Jetson - Git Ignore
+# ============================================================
+# --- Docker Images ---
+*.tar
+
+# --- Compiled Object Files ---
+*.o
+*.obj
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs ---
+*.log
+
+# --- Git ---
+*.orig

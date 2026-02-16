@@ -1,0 +1,49 @@
+# ==============================================================================
+# Requirements for DeepStream YOLOv8 Project
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# FOR TRAINING & EXPORT (on training machine only)
+# ------------------------------------------------------------------------------
+# ultralytics>=8.0.0          # YOLOv8 framework (NOT needed on Jetson)
+# torch>=1.10.0               # PyTorch (NOT needed on Jetson)
+# torchvision>=0.11.0         # PyTorch vision (NOT needed on Jetson)
+# onnx>=1.12.0                # ONNX export (NOT needed on Jetson)
+# onnxsim>=0.4.0              # ONNX simplifier (NOT needed on Jetson)
+
+# ------------------------------------------------------------------------------
+# FOR JETSON NANO (runtime only - DeepStream inference)
+# ------------------------------------------------------------------------------
+# All dependencies below are PRE-INSTALLED with JetPack 4.6:
+# - DeepStream SDK 6.0
+# - TensorRT 8.0+
+# - CUDA 10.2
+# - GStreamer 1.14+
+# - Python 3.6
+# - NumPy
+# - OpenCV (cv2)
+
+# No additional Python packages needed for DeepStream inference!
+# The .engine file runs directly with TensorRT via DeepStream.
+
+# ------------------------------------------------------------------------------
+# OPTIONAL: For standalone detection script (scripts/detect.py)
+# ------------------------------------------------------------------------------
+# Only if you want to run the standalone Python script instead of DeepStream:
+# pycuda>=2021.1              # CUDA bindings for Python
+# numpy>=1.21.0               # Usually pre-installed
+# opencv-python>=4.5.0        # Usually pre-installed as cv2
+
+# ==============================================================================
+# Installation Instructions:
+# ==============================================================================
+# 
+# On Training Machine (x86_64):
+#   Uncomment the training section and run:
+#   pip install ultralytics torch torchvision onnx onnxsim PyYAML
+#
+# On Jetson Nano (aarch64):
+#   NO installation needed! JetPack 4.6 includes everything.
+#   DeepStream runs .engine files directly with TensorRT.
+#
+# ==============================================================================

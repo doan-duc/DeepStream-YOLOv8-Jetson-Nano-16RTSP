@@ -1,0 +1,48 @@
+[property]
+gpu-id=0
+net-scale-factor=0.0039215697906911373
+
+# Color format: 0 = BGR
+model-color-format=0
+
+# Path to the TensorRT engine file (generated on the target Jetson device)
+model-engine-file=../models/best.engine
+
+# Path to the class labels file
+labelfile-path=../models/labels.txt
+
+# Batch size must match the number of sources
+batch-size=16
+
+# Network mode: 0=FP32, 1=INT8, 2=FP16
+network-mode=2
+
+# Number of classes in the model
+num-detected-classes=1
+
+# Inference interval (0 = every frame)
+interval=0
+
+gie-unique-id=1
+
+# Process mode: 1=Primary, 2=Secondary
+process-mode=1
+
+# Network type: 0=Detector, 1=Classifier, 2=Segmentation
+network-type=0
+
+# Clustering mode: 2=DBSCAN (recommended for YOLO)
+cluster-mode=2
+
+maintain-aspect-ratio=1
+symmetric-padding=1
+
+# Custom YOLO bounding box parser
+parse-bbox-func-name=NvDsInferParseYolo
+custom-lib-path=../nvdsinfer_custom_impl_Yolo/libnvdsinfer_custom_impl_Yolo.so
+engine-create-func-name=NvDsInferYoloCudaEngineGet
+
+[class-attrs-all]
+nms-iou-threshold=0.2
+pre-cluster-threshold=0.2
+topk=300
