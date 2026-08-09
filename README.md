@@ -394,7 +394,7 @@ This produces `libnvdsinfer_custom_impl_Yolo.so`, which handles:
 
 | Configuration | Cameras | Batch Size | Precision | Approx. FPS |
 |---|---|---|---|---|
-| `deepstream_app_config.txt` | 16 | 16 | FP16 | ~10-15 per stream |
+| `deepstream_app_config.txt` | 16 | 16 | FP16 | ~4-7 per stream |
 
 > Performance varies based on:
 > - Network conditions and RTSP stream quality
